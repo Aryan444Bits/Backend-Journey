@@ -1,0 +1,21 @@
+DataBase : 
+
+-> A Database is a system that stores and manages your application's persistent data.
+-> in data base data can't be cleaned after restarting the server or code
+
+Atlas : 
+
+-> Mongodb Atlas is the online Platform where the databse os created 
+-> in Atlas we create a Database of fixed 512MB size databse 
+-> to create the database we have to follow several steps 
+
+Mongoose :
+
+-> it used to connect the database to the server 
+-> for the connection of database we need an connection string got from the Mongodb Compass
+
+
+
+Compass :
+
+-> in Compass we can see the data which were sttored in the database

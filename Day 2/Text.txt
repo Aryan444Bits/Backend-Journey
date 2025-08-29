@@ -1,0 +1,42 @@
+we dont use http :
+-> bcoz its verbose(bhut bada code likhna padta hai) and kaai baar code hme same ka ke liye repeated code likhan bhi pad jata hai 
+
+-> isme routing , middleware and koi extra fetaires nhi milta
+
+-> its hard to manage large applications
+
+Express :
+
+-> its very light weight and fast node.js framework
+
+-> Simplifies server creation and routing.
+
+-> its a package need to install from the npm 
+
+-> in express if one extra functionality is this when we create the server then we start the server so we dont need to program initially it will automatically programed.
+
+req :
+
+-> client ne jo bhi request server pe bheji hogi wo req me aati hai
+
+res:
+
+-> data send to the client after sending the request to the server 
+
+API(Application Program Interface):
+
+-> it is a way where two applicatins get communicated with each other.
+
+-> eg : supose we open a amazon in our browser it is also an application then it send the request to the server then it will load the pages or frontend page of the web in my application. here two aplications are getting communicated one is our browser and another is server which is also a application. That Whole Process done with the API 
+
+-> Client API ke through server pe request bhejta hai, server apne database me uss se related data dhundta hai, aur fir usse API ke through frontend pe bhej deta hai.
+
+REST API(Representational State Transfer) :
+
+-> is type of API which followa rules and guidlines for communications.
+
+-> REST API sirf ek rukes and guidlines deta hai ki kaise do applications apas me communicate krenge 
+
+-> it defines fixed stamdards on how request and responses should be structured.
+
+-> Uses HTTP methods: (GET, POST, PUT, DELETE) for communication

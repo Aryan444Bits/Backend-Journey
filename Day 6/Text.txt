@@ -1,0 +1,31 @@
+Schema : 
+
+-> Schema is structure of the dataBase
+-> jiss structure me hm data ko store krenge dataBase me us structure ko schema bolte h
+
+models : 
+
+-> it is the folser where we colllect the different different types of the data in different file
+
+-> user.module.js
+-> product.model.js
+
+like this we make a file in the models folder 
+
+
+=> agar hm puri process dekhe to 
+-> create a server first
+-> noe make the db as following the folder structure
+-> connect the db to the server
+-> now make the schema first to store the data in dataBase
+
+
+Model : 
+
+-> Model makes it easy to perform operations(CRUD) coressponding collections(group of similar type of data )
+-> model is used to only perform the CRUD operations
+-> without model we can write a code but we have to write a larger amt of code while if we use the model then we don't need to write a large amount of code
+
+->const noteMdoel = mongoose.model("note" , noteSchema)
+                                     |          |
+                                 Collection   Collection Name

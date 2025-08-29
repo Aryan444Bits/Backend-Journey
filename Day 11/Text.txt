@@ -1,0 +1,38 @@
+-> When we send a request from Postman, it first goes to the server (running on app.js). In app.js, we define different routes and link them to router files. Based on the URL (for example, http://localhost:3000/), Express forwards the request to the correct router file. Inside the router file, the API logic is written to handle the request (like fetching data, uploading files, or performing some action). After executing the logic, the router sends a response back to the server, and finally, the server returns that response to Postman.
+
+👉 In short:
+Postman → app.js → router file → API logic → response → Postman
+
+
+MIDDLEWARE :
+
+Syntax of MiddleWare :
+
+<filename>.use((res,req,next)=>{})
+
+Properties : 
+
+-> modify any request's data(request ke andar jo data aa raha h usko modify kiya jaa skta hai)
+-> send the response
+-> error generation
+
+Where MiddleWare is used : 
+
+-> we can apply the middleware in the middle of the app.js and router files or router and api or both
+
+-> first if we create and middleware between app and route file then when the Postman is sending the request to the server so the req goes to the app and now there is a middware so the request goes through the middleware then after to the route file
+
+-> middlware used krte waqt hme next(); ka use krte h kyu ki jab request app se hoke middleare pe jaati hai and then agar hmne next nhi likha h to request aage router pe nhi jati h aur hme response nhi milega but middlware pe request aye thi ye show ho jaygea
+
+
+Types of MiddleWare :
+
+-> Application MiddleWare : which middleware used between app and router is called Application MiddleWare
+
+-> Router-Level MiddleWare : which middleware used between router and API is called Router-Level MiddleWare
+
+-> Error-handling MiddleWare : we use this middlware at the end of the api when response is about to send to the postman bcoz error should be arise from anywhere
+
+-> Build-in MiddleWare
+-> Third-party MiddleWare
+-> Custom MiddleWare

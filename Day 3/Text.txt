@@ -1,0 +1,46 @@
+Post Man :
+
+-> we use the pst man for making the API's 
+-> its give all the neccessory infomartion related to the API development
+-> when we request to the server and server send the response back in postman we can see the timing also . Many more information we can see the postman
+
+Nodemon : 
+
+-> this is used for starting the server 
+-> in node server.js if we make any update in our code then we have restart the server
+-> but in nodemon we don't need to restartthe server it automatically update it
+-> "npx nodemon server.js" we use this command to run nodemon
+
+npm -> Node Package Manager
+npx -> Node Package Executor
+
+->  npx id doesn't need installation for running the Package 
+
+Methodsin REST API
+
+-> GET : to get data from the server
+
+-> Post : (sending data from the frontend to backend)to send the data to the server(creating new resources(user account , comment , post creation , product creation etc ))
+
+-> PATCH : to update data on the server
+
+-> DELETE : to remove data from the server
+
+
+Way to Send Data in Requests :
+
+=> req.body :
+
+-> it is mostly used in API development
+-> it is best for larger or complex or sensitive data like passwords
+-> we genereally used with POST,PUT,PATCH request
+-> express doesn't read req.body by default we have to use middleware
+
+
+=> req.query :
+
+-> 
+
+
+
+=> req.params :

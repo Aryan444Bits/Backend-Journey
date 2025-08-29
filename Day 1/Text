@@ -1,0 +1,21 @@
+-> Packaages : is the block of code which was written by someone else but still we can use it.
+
+-> all packages we got in th npm website
+
+-> npm works as a code provider which provide the code or used to install the package in our folder
+
+-> after installation it comes in node modules folder 
+
+-> package.json file : hm kaun kaun se packages ka use kr rhe hai uska pura maintanence package.json file ke pass hota hai
+
+-> jinko hme install krna padta hai apne folder me wo package hote hai  aur jinhe hme install nhi krna padta use krne ke liye wo module hote hai.
+Modules are already installed at the time of nodejs installation
+
+Example : package :- cat-me , express
+          module :- http , fs , path
+
+-> require() : means that we want to use the intalled package
+
+-> server : it is just like machine which was programed by us whos gives the reposne after sending the requesting to that machine
+
+Ex : suppose we open the amazon website we have seen the frontend of the web now when we search the headphones on the search browser of the web then one request send from frontend to the backend. now server search the headphones related thing on database, now all the data from the database will be send to the frontend.
