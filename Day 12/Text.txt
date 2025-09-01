@@ -1,0 +1,5 @@
+Authentications :
+
+-> suppose there ia an user who send the request on instagram server for(post , story , like , repost etc) then we can siply know tha there is only one user who send the request but the queston is there is multiple user who sending the request to the server then can server known thta which request comes from which user ?
+
+here is the answer When multiple users send requests to Instagram’s server, the server uses unique tokens assigned to each user. When a new user creates an account, Instagram generates a token (like a student ID). Every request sent by the user includes this token, so the server can always identify which request belongs to which user.
