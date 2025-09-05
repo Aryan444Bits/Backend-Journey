@@ -8,6 +8,15 @@ router.post('/register', async (req, res) => {
 
     const { username, password } = req.body
 
+    const isUserAlreadyExist = await userModel.findOne({
+        username
+    })
+
+    if(isUserAlreadyExist){
+        return res.status(409).json({
+            message:"Username Already In Use"
+        })
+    }
 
     const user = await userModel.create({
         username, password
@@ -35,12 +44,12 @@ router.post('/login', async (req, res) => {
 
 
     if (!user) {
-        return res.status(401).json({
-            message: "Invalid User Name"
+        return res.status(404).json({
+            message: "User Account Not Found"
         })
     }
 
-    const isPasswordValid = password == user.password
+    const isPasswordValid = password === user.password
 
     if (!isPasswordValid) {
         return res.status(401).json({
@@ -48,8 +57,15 @@ router.post('/login', async (req, res) => {
         })
     }
 
+    const token = jwt.sign({id:user._id},process.env.JWT_SECRET)
+
+    res.cookie("token",token,{
+        expires: new Date(Date.now() + 1000 * 60 * 60 *24 * 7), // 7 after 7 days token is expired
+    })
+
     res.status(200).json({
-        message: "User LoggedIn Successfully"
+        message: "User LoggedIn Successfully",
+        user
     })
 })
 
@@ -81,7 +97,12 @@ router.get('/user', async (req, res) => {
     }
 })
 
-
+router.get('/logout', (req, res) => {
+    res.clearCookie("token")
+    res.status(200).json({
+        message: "User Logged Out Successfully"
+    })
+})
 
 
 
