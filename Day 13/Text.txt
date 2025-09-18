@@ -1,3 +1,8 @@
+Controller :
+
+-> when we create an api and passing the callback function in the api so that function is called the controller
+
+
 Authentication : 
 
 -> when we create an api in the route file then we have to tell the server so we have to add app.use('/',<route-file>) that we make more api in the route file now we have to many different types of api for different works like coustmer , products etc so we have to give the prefix of the api in the app.use() like :
