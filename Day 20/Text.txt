@@ -1,0 +1,50 @@
+Websockets :
+
+-> In WebSocket, there is an inbuilt persistent connection between the client and the server. This connection does not get disconnected unless either side explicitly closes it, the network fails, or the system shuts down.
+
+-> Unlike HTTP, where the client must send a request to receive data, in WebSocket the server can directly push data to the client without waiting for any request. This makes it a two-way (bidirectional) communication channel.
+
+-> It is also considered a persistent type of socket connection, since it remains active until explicitly closed or disrupted by a failure.
+
+-> where we want to build the real time communication then where we use websockets
+
+-> when we use express it by default works on http protocol where it tells that if any u want to do any thing between client and server then for each and every work it have to send the request to perform the task.
+
+-> with the help of socket.io library we implement the websocket
+
+WhatsApp as an Example of WebSocket
+
+
+1> Persistent Connection
+
+-> When you open WhatsApp Web or the mobile app, it creates a WebSocket connection with WhatsApp’s servers.
+
+-> This connection stays alive as long as you are online, so you don’t need to reconnect for every message.
+
+
+2> Bidirectional Communication
+
+-> You → Server → Friend: When you send “Hi 👋”, the message goes through the WebSocket to WhatsApp’s server and then instantly pushed to your friend.
+
+-> Friend → Server → You: When your friend replies, the server pushes the message back to you without you requesting it.
+
+
+3> Real-Time Updates
+
+-> Message delivery ticks (✓ ✓)
+
+-> Typing indicators ("… is typing")
+
+-> Online/offline status
+
+-> Message seen status (blue ticks)
+All these require instant updates → made possible by WebSockets.
+
+
+4> Low Latency
+
+-> WebSocket avoids the overhead of creating a new HTTP request for every message.
+
+-> Instead, it reuses the same connection → making chat faster and real-time.
+
+
