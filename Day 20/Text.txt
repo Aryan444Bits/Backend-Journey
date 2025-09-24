@@ -12,6 +12,29 @@ Websockets :
 
 -> with the help of socket.io library we implement the websocket
 
+--------------------------------------------------
+
+Communication of Client and Server in Socket.io :
+
+-> the socket.io provide the event based communication. where ever we seen the io means an complete server and if anywhere written socket then it means single user.
+
+-> in socket.io emit means only whose fire the events means trigger krna , while on means event ko listen krna
+
+example : 
+
+emit = 🔔 ghanti bajana (event trigger karna)
+
+on = 👂 ghanti ki awaaz sunna (event listen karna)
+
+-> there are two type of event in socket.io
+
+1> predefine event : it have only two inbuilt events. ->connection and disconnect
+
+2> custom event : we can built multiple event in the custom event as much we want
+
+--------------------------------------------------
+
+
 WhatsApp as an Example of WebSocket
 
 
