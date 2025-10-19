@@ -1,0 +1,7 @@
+LangChain :
+
+-> in the langchain we use multiple ai in at a once 
+
+-> but in without langtchain if we have to us emultiple ai agents like gemini, openai, microsoft etc then we have to write a seprate code for each of them
+
+-> langchan aise bghut sae features hmme provide krta hai jaise STM & LTM isme asani se use kiye jaa skte hai
