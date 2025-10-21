@@ -1,0 +1,40 @@
+Embed JavaScript (EJS) :
+
+-> in the ejs we can design frontend from backed
+
+-> for usng ejs we have to intsall an package npm i ejs
+
+-> we have to tell the express that you have t0 use view engine that is ejs
+
+-> we have to make an view folder and in view folder we have to make file with extension .ejs and we can whatever name of the file what we want. I n that file we can write our HTML code 
+
+-> use logger which tell us what is going on the server, there are different types of the logger i am going with morgan
+
+-> use the moran as the middelware which gives you the information what is going on your server in different mode (combined,dev,short,common,tiny)
+
+-> res.render("index"); if you not sending the response from the server then nothing will shown on the web browser and one more thing to be mention is that file name ("<ejs file name>") is must be same
+
+-> delimiters : there 6 different types of delimiters in ejs, wtih the delimiters we can easily get the message which was send from the backend to the frontendwe can easily render on it.
+
+<% code %> : Scriplet -> runs js code no output to page
+
+<%= value %> : Ecsaped output -> print the value, HTML is Ecsaped(take html tag as a text)
+
+<%- value %> : Unescaped output -> print raw HTML(takes html tag as a html code)
+
+
+
+
+
+
+
+
+
+<!-- <p>
+        <%= message %>
+    </p>
+    <h1>Welcome to the express view</h1>
+    <% for(let i=0; i < 5; i++) { %>
+        <p>Item <%= i + 1 %>
+        </p>
+        <% } %> -->
