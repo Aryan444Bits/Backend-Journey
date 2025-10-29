@@ -1,0 +1,7 @@
+Implements of Google Authentications
+
+-> for setting this we need client_id and client_secrets from the google to the use user credential from the google to login
+
+-> for getting the user data from the goosg;e we have to create the some credentials on the google and that is client_id and client_secrets
+
+-> for setting the google auth read document : https://github.com/ankurdotio/Difference-Backend-video/tree/main/025-googleoauth
