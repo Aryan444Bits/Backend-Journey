@@ -1,0 +1,33 @@
+Implementation of Razor Pay :
+
+when we pay any amount at the time of ordering the items online how it works:
+
+-> How to verify the payment user send the money all the stups
+
+1> user select the product which he want to buy
+
+2> as soon as he clicked on the by now button a request goes to the backend server from the frontend
+
+3> now the backend takes amount,currency and sens the data tothe razorpay server for creating the order
+
+4> after creating the order razorpay server gives an order_id in which amount and currecy was feeded to the backend serevr whichwas saved in the dataBase as a payment status pending
+
+5> now that order order_idwas send to the frontend from the backend server
+
+6> now frontend directly sent the request to the razorpay server of paying the amount with oerder order_id
+
+7> now razorpay server send an ui of choosing the mode of payment with whom user can Pay and after selcetion user complets the payment that.... 
+
+
+(amount goes to the razorpay account not to the my account after 2 to 3 days razorpay sends the amount to the my account)
+
+...amount goes to the razorpay server and now it send an (order_id,payment_id,signature) to the frontend
+
+8> now frontend sends that data to the backend server for verifying the payment and also for saving that data in dataBase
+
+9> n0ow backend server when it got the data thne it send the data to the razorpay server for verifying after the verification the data will stored in the dataBase with updating the payment status successfull
+
+10> now out backend server send the response to the frontend payment successfull if signature valid ifnot it send the response failure 
+
+
+-> for setting the complete Razorpay use this repo : https://github.com/ankurdotio/Difference-Backend-video/tree/main/024-razorpay
